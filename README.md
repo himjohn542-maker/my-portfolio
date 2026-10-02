@@ -15,4 +15,4 @@ Constantly sharpening my backend architecture and API integration skills.
 
 ---
 
-Let's Connect: LinkedIn: https://linkedin.com/in/ryan-ehaigwina-87873b41a | Email-ehiagwinarbtc@gmail,com
+Let's Connect: LinkedIn: https://linkedin.com/in/ryan-ehaigwina-87873b41a | Email: ehiagwinarbtc@gmail,com
