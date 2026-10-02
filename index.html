@@ -1,0 +1,1484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Ehiagwina Porfilio | Software Engineer</title>
+
+    <link
+      rel="shortcut icon"
+      href="images-for-my-portfolio/Screenshot 2026-10-02 183324.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .hero-section .btn:hover {
+        background-color: #4b1c71 !important;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(127, 76, 165, 0.5);
+      }
+      #skills .rounded-4:hover {
+        transform: translateY(-8px);
+        border-color: #7f4ca5 !important;
+      }
+      .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(127, 76, 165, 0.25);
+        border-color: #7f4ca5 !important;
+      }
+      #contact .btn:hover {
+        background-color: #4b1c71 !important;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(127, 76, 165, 0.5);
+      }
+      #connectModal a:hover {
+        background-color: rgba(127, 76, 165, 0.25) !important;
+        transform: translateX(5px);
+      }
+
+      footer a:hover {
+        color: #7f4ca5 !important;
+      }
+    </style>
+  </head>
+  <body style="cursor: pointer">
+    <!-- ===================== NAVBAR START ===================== -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      style="
+        background-color: #202020;
+        font-family: &quot;Poppins&quot;, sans-serif;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #7f4ca5;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <div class="container">
+        <!-- Brand / Logo -->
+        <a
+          class="navbar-brand fw-bold animate__animated animate__fadeInLeft"
+          href="#home"
+          style="
+            color: #7f4ca5;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+          "
+        >
+          RE
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <!-- Home -->
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-3"
+                href="#home"
+                style="
+                  font-size: 1.05rem;
+                  font-weight: 500;
+                  transition: color 0.3s ease;
+                "
+              >
+                Home
+              </a>
+            </li>
+
+            <!-- My Journey -->
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-3"
+                href="#my-journey"
+                style="
+                  font-size: 1.05rem;
+                  font-weight: 500;
+                  transition: color 0.3s ease;
+                "
+              >
+                About Me
+              </a>
+            </li>
+
+            <!-- Journey Dropdown (Skills, Projects, Experience) -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="
+                  font-size: 1.05rem;
+                  font-weight: 500;
+                  transition: color 0.3s ease;
+                "
+              >
+                Journey
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark border-0 shadow"
+                style="background-color: #202020; border-top: 2px solid #7f4ca5"
+              >
+                <li>
+                  <a
+                    class="dropdown-item py-2"
+                    href="#skills"
+                    style="transition: background 0.2s"
+                  >
+                    My Expertise
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item py-2"
+                    href="#projects"
+                    style="transition: background 0.2s"
+                  >
+                    Things ive Built
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item py-2"
+                    href="#experience"
+                    style="transition: background 0.2s"
+                  >
+                    Experience
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-3"
+                href="#contact"
+                style="
+                  font-size: 1.05rem;
+                  font-weight: 500;
+                  transition: color 0.3s ease;
+                "
+              >
+                Contact
+              </a>
+            </li>
+
+            <!-- Download Resume Button -->
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a
+                href="#"
+                class="btn px-4 py-2"
+                style="
+                  background-color: #7f4ca5;
+                  color: white;
+                  border: none;
+                  font-weight: 500;
+                  font-size: 0.95rem;
+                  border-radius: 6px;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 15px rgba(127, 76, 165, 0.3);
+                "
+              >
+                <i class="fas fa-download me-2"></i>Download Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ===================== NAVBAR END ===================== -->
+
+    <!-- ===================== HERO SECTION START ===================== -->
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center"
+      style="
+        min-height: 88vh;
+        background-image: url(/images-for-my-portfolio/hero-section.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        font-family: &quot;Poppins&quot;, sans-serif;
+      "
+    >
+      <!-- Dark overlay so text stays readable on the background image -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(32, 32, 32, 0.75);
+          z-index: 1;
+        "
+      ></div>
+
+      <div class="container position-relative" style="z-index: 2">
+        <div class="row align-items-center">
+          <!-- LEFT SIDE: Text Content -->
+          <div class="col-lg-6 text-white mb-5 mb-lg-0">
+            <!-- Name -->
+            <h1
+              class="fw-bold mb-3 animate__animated animate__fadeInUp"
+              style="font-size: 3.2rem; line-height: 1.2"
+            >
+              Ryan Ehiagwina
+            </h1>
+
+            <!-- Tagline -->
+            <h4
+              class="mb-4 animate__animated animate__fadeInUp animate__delay-1s"
+              style="color: #7f4ca5; font-weight: 500; letter-spacing: 1px"
+            >
+              Software Engineer | Ghostwriter | AI Automation Specialist
+            </h4>
+
+            <!-- Introduction Paragraph (placeholder) -->
+            <p
+              class="mb-4 animate__animated animate__fadeInUp animate__delay-2s"
+              style="
+                font-size: 1.1rem;
+                line-height: 1.7;
+                max-width: 520px;
+                color: #eaeaea;
+              "
+            >
+              <!-- ↓↓↓ Replace this text with your real introduction later ↓↓↓ -->
+              Write your short introduction here. This is just a placeholder so
+              you can easily replace it with your own words later.
+            </p>
+
+            <!-- Download Resume Button -->
+            <a
+              href="#"
+              class="btn btn-lg px-4 py-3 animate__animated animate__fadeInUp animate__delay-3s"
+              style="
+                background-color: #7f4ca5;
+                color: white;
+                border: none;
+                font-weight: 500;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                box-shadow: 0 6px 20px rgba(127, 76, 165, 0.35);
+              "
+            >
+              <i class="fas fa-download me-2"></i> Download Resume
+            </a>
+          </div>
+
+          <!-- RIGHT SIDE: Profile Picture -->
+          <div class="col-lg-6 text-center">
+            <img
+              src="your-profile-picture.png"
+              alt="Ryan Ehiagwina"
+              class="img-fluid animate__animated animate__fadeInRight"
+              style="
+                max-width: 380px;
+                border-radius: 20px;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+                border: 3px solid #7f4ca5;
+              "
+            />
+            <!-- ↑ Replace "your-profile-picture.png" with your actual photo (background removed) -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== HERO SECTION END ===================== -->
+
+    <!-- ===================== MY JOURNEY SECTION START ===================== -->
+    <section
+      id="my-journey"
+      class="py-5"
+      style="
+        background-color: #202020;
+        font-family: &quot;Poppins&quot;, sans-serif;
+        color: #eaeaea;
+      "
+    >
+      <div class="container py-5">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <h2
+            class="fw-bold mb-3 animate__animated animate__fadeInUp"
+            style="font-size: 2.6rem; color: white"
+          >
+            My <span style="color: #7f4ca5">Journey</span>
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 3px;
+              background-color: #7f4ca5;
+              margin: 0 auto;
+            "
+          ></div>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <!-- LEFT SIDE: Story Text -->
+          <div class="col-lg-6">
+            <div class="animate__animated animate__fadeInLeft">
+              <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8">
+                My journey into the world of technology and creativity began
+                with a simple curiosity. Over time, that curiosity grew into a
+                strong passion for
+                <span style="color: #7f4ca5; font-weight: 600"
+                  >software engineering</span
+                >, where I discovered the power of building useful solutions
+                through code.
+              </p>
+
+              <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8">
+                Along the way, I also explored the art of
+                <span style="color: #7f4ca5; font-weight: 600"
+                  >ghostwriting</span
+                >, learning how to communicate ideas clearly and effectively.
+                This skill has helped me express complex thoughts in a simple
+                and meaningful way.
+              </p>
+
+              <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8">
+                More recently, I became deeply interested in
+                <span style="color: #7f4ca5; font-weight: 600"
+                  >AI automation</span
+                >, especially using tools like n8n. I enjoy creating systems
+                that save time and make processes smarter and more efficient.
+              </p>
+
+              <p class="mb-0" style="font-size: 1.1rem; line-height: 1.8">
+                Every step of this journey has shaped who I am today — a
+                continuous learner who loves combining technology, creativity,
+                and problem-solving to build meaningful work.
+                <!-- You can edit or expand this text later -->
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: Visual Journey Design -->
+          <div class="col-lg-6">
+            <div class="animate__animated animate__fadeInRight">
+              <!-- Journey Timeline Cards -->
+              <div class="d-flex flex-column gap-4">
+                <!-- Step 1 -->
+                <div
+                  class="d-flex align-items-start gap-3 p-3 rounded-3"
+                  style="
+                    background-color: #2a2a2a;
+                    border-left: 4px solid #7f4ca5;
+                  "
+                >
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-color: #7f4ca5;
+                      color: white;
+                      font-weight: 600;
+                    "
+                  >
+                    01
+                  </div>
+                  <div>
+                    <h5 class="mb-1 text-white" style="font-weight: 600">
+                      Curiosity Begins
+                    </h5>
+                    <p class="mb-0" style="font-size: 0.95rem; color: #cfcfcf">
+                      First steps into technology and discovering the power of
+                      building things.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div
+                  class="d-flex align-items-start gap-3 p-3 rounded-3"
+                  style="
+                    background-color: #2a2a2a;
+                    border-left: 4px solid #7f4ca5;
+                  "
+                >
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-color: #7f4ca5;
+                      color: white;
+                      font-weight: 600;
+                    "
+                  >
+                    02
+                  </div>
+                  <div>
+                    <h5 class="mb-1 text-white" style="font-weight: 600">
+                      Learning & Building
+                    </h5>
+                    <p class="mb-0" style="font-size: 0.95rem; color: #cfcfcf">
+                      Diving into software engineering, writing, and practical
+                      projects.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div
+                  class="d-flex align-items-start gap-3 p-3 rounded-3"
+                  style="
+                    background-color: #2a2a2a;
+                    border-left: 4px solid #7f4ca5;
+                  "
+                >
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-color: #7f4ca5;
+                      color: white;
+                      font-weight: 600;
+                    "
+                  >
+                    03
+                  </div>
+                  <div>
+                    <h5 class="mb-1 text-white" style="font-weight: 600">
+                      AI & Automation
+                    </h5>
+                    <p class="mb-0" style="font-size: 0.95rem; color: #cfcfcf">
+                      Exploring AI automation with n8n and creating smarter
+                      workflows.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div
+                  class="d-flex align-items-start gap-3 p-3 rounded-3"
+                  style="
+                    background-color: #2a2a2a;
+                    border-left: 4px solid #7f4ca5;
+                  "
+                >
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-color: #7f4ca5;
+                      color: white;
+                      font-weight: 600;
+                    "
+                  >
+                    04
+                  </div>
+                  <div>
+                    <h5 class="mb-1 text-white" style="font-weight: 600">
+                      Today & Beyond
+                    </h5>
+                    <p class="mb-0" style="font-size: 0.95rem; color: #cfcfcf">
+                      Continuously growing, building, and sharing meaningful
+                      work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== MY JOURNEY SECTION END ===================== -->
+
+    <!-- ===================== SKILLS / MY EXPERTISE SECTION START ===================== -->
+    <section
+      id="skills"
+      class="py-5 position-relative"
+      style="
+        font-family: &quot;Poppins&quot;, sans-serif;
+        min-height: 90vh;
+        background-image: url(/images-for-my-portfolio/background-image-my-expertise.png); /* ← Replace with your image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <!-- Dark overlay for readability -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(32, 32, 32, 0.82);
+          z-index: 1;
+        "
+      ></div>
+
+      <div class="container position-relative py-5" style="z-index: 2">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <h2
+            class="fw-bold mb-3 animate__animated animate__fadeInUp"
+            style="font-size: 2.6rem; color: white"
+          >
+            My <span style="color: #7f4ca5">Expertise</span>
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 3px;
+              background-color: #7f4ca5;
+              margin: 0 auto;
+            "
+          ></div>
+          <p
+            class="mt-3"
+            style="color: #eaeaea; max-width: 600px; margin: 0 auto"
+          >
+            A collection of the skills and tools I’ve developed along my
+            journey.
+          </p>
+        </div>
+
+        <!-- Skills Categories -->
+        <div class="row g-4">
+          <!-- Category 1: Technical Skills -->
+          <div class="col-md-4">
+            <div
+              class="h-100 p-4 rounded-4 animate__animated animate__fadeInUp"
+              style="
+                background-color: rgba(42, 42, 42, 0.9);
+                border: 1px solid rgba(127, 76, 165, 0.3);
+                transition: transform 0.3s ease;
+              "
+            >
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 50px; height: 50px; background-color: #7f4ca5"
+                >
+                  <i class="fas fa-code text-white"></i>
+                </div>
+                <h4 class="mb-0 text-white fw-semibold">Technical Skills</h4>
+              </div>
+
+              <ul class="list-unstyled mb-0" style="color: #eaeaea">
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  HTML, CSS & Bootstrap
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  JavaScript
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Software Engineering Fundamentals
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Responsive Web Design
+                </li>
+                <li class="d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Problem Solving & Logic
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Category 2: Creative Skills -->
+          <div class="col-md-4">
+            <div
+              class="h-100 p-4 rounded-4 animate__animated animate__fadeInUp animate__delay-1s"
+              style="
+                background-color: rgba(42, 42, 42, 0.9);
+                border: 1px solid rgba(127, 76, 165, 0.3);
+                transition: transform 0.3s ease;
+              "
+            >
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 50px; height: 50px; background-color: #7f4ca5"
+                >
+                  <i class="fas fa-pen-nib text-white"></i>
+                </div>
+                <h4 class="mb-0 text-white fw-semibold">Creative Skills</h4>
+              </div>
+
+              <ul class="list-unstyled mb-0" style="color: #eaeaea">
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Ghostwriting
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Content Writing
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Storytelling
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Clear Communication
+                </li>
+                <li class="d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Creative Thinking
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Automation -->
+          <div class="col-md-4">
+            <div
+              class="h-100 p-4 rounded-4 animate__animated animate__fadeInUp animate__delay-2s"
+              style="
+                background-color: rgba(42, 42, 42, 0.9);
+                border: 1px solid rgba(127, 76, 165, 0.3);
+                transition: transform 0.3s ease;
+              "
+            >
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 50px; height: 50px; background-color: #7f4ca5"
+                >
+                  <i class="fas fa-robot text-white"></i>
+                </div>
+                <h4 class="mb-0 text-white fw-semibold">Tools & Automation</h4>
+              </div>
+
+              <ul class="list-unstyled mb-0" style="color: #eaeaea">
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  AI Automation with n8n
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Workflow Automation
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  API Integrations
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  ChatGPT & AI Tools
+                </li>
+                <li class="d-flex align-items-center">
+                  <i
+                    class="fas fa-check-circle me-2"
+                    style="color: #7f4ca5"
+                  ></i>
+                  Productivity Systems
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== SKILLS / MY EXPERTISE SECTION END ===================== -->
+
+    <!-- ===================== PROJECTS SECTION START ===================== -->
+    <section
+      id="projects"
+      class="py-5"
+      style="
+        background-color: #1a1a1a;
+        font-family: &quot;Poppins&quot;, sans-serif;
+        color: #eaeaea;
+      "
+    >
+      <div class="container py-5">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <h2
+            class="fw-bold mb-3 animate__animated animate__fadeInUp"
+            style="font-size: 2.6rem; color: white"
+          >
+            Things I’ve <span style="color: #7f4ca5">Built</span>
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 3px;
+              background-color: #7f4ca5;
+              margin: 0 auto;
+            "
+          ></div>
+          <p
+            class="mt-3"
+            style="color: #cfcfcf; max-width: 600px; margin: 0 auto"
+          >
+            A selection of projects I’ve worked on. More coming soon.
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="row g-4">
+          <!-- Project Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="project-card h-100 rounded-4 overflow-hidden animate__animated animate__fadeInUp"
+              style="
+                background-color: #2a2a2a;
+                border: 1px solid rgba(127, 76, 165, 0.25);
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
+              "
+            >
+              <!-- Project Name -->
+              <div
+                class="p-3 text-center"
+                style="border-bottom: 1px solid rgba(127, 76, 165, 0.2)"
+              >
+                <h5 class="mb-0 text-white fw-semibold">Union Bank Project</h5>
+              </div>
+
+              <!-- Project Image -->
+              <div>
+                <img
+                  src="/images-for-my-portfolio/Union-project.png"
+                  alt="Project One"
+                  class="w-100"
+                  style="height: 220px; object-fit: cover; display: block"
+                />
+                <!-- ↑ Replace with your real project image -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="project-card h-100 rounded-4 overflow-hidden animate__animated animate__fadeInUp animate__delay-1s"
+              style="
+                background-color: #2a2a2a;
+                border: 1px solid rgba(127, 76, 165, 0.25);
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
+              "
+            >
+              <div
+                class="p-3 text-center"
+                style="border-bottom: 1px solid rgba(127, 76, 165, 0.2)"
+              >
+                <h5 class="mb-0 text-white fw-semibold">First bank replica</h5>
+              </div>
+
+              <div>
+                <img
+                  src="project-image-2.jpg"
+                  alt="Project Two"
+                  class="w-100"
+                  style="height: 220px; object-fit: cover; display: block"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="project-card h-100 rounded-4 overflow-hidden animate__animated animate__fadeInUp animate__delay-2s"
+              style="
+                background-color: #2a2a2a;
+                border: 1px solid rgba(127, 76, 165, 0.25);
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
+              "
+            >
+              <div
+                class="p-3 text-center"
+                style="border-bottom: 1px solid rgba(127, 76, 165, 0.2)"
+              >
+                <h5 class="mb-0 text-white fw-semibold">AjoFund</h5>
+              </div>
+
+              <div>
+                <img
+                  src="project-image-3.jpg"
+                  alt="Project Three"
+                  class="w-100"
+                  style="height: 220px; object-fit: cover; display: block"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- project 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="project-card h-100 rounded-4 overflow-hidden animate__animated animate__fadeInUp animate__delay-2s"
+              style="
+                background-color: #2a2a2a;
+                border: 1px solid rgba(127, 76, 165, 0.25);
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
+              "
+            >
+              <div
+                class="p-3 text-center"
+                style="border-bottom: 1px solid rgba(127, 76, 165, 0.2)"
+              >
+                <h5 class="mb-0 text-white fw-semibold">Ai Agent</h5>
+              </div>
+
+              <div>
+                <img
+                  src="project-image-3.jpg"
+                  alt="Project four"
+                  class="w-100"
+                  style="height: 220px; object-fit: cover; display: block"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- 
+        ========================
+        TO ADD A NEW PROJECT:
+        Just copy one of the cards above and paste it here.
+        The layout will automatically adjust (3 per row on large screens).
+        ========================
+      -->
+        </div>
+      </div>
+    </section>
+    <!-- ===================== PROJECTS SECTION END ===================== -->
+
+    <!-- ===================== EXPERIENCE SECTION START ===================== -->
+    <section
+      id="experience"
+      class="py-5 position-relative"
+      style="
+        font-family: &quot;Poppins&quot;, sans-serif;
+        background-image: url(/images-for-my-portfolio/My-Expirence.png); /* ← Replace with your image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      "
+    >
+      <!-- Dark overlay -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(32, 32, 32, 0.85);
+          z-index: 1;
+        "
+      ></div>
+
+      <div class="container position-relative py-5" style="z-index: 2">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <h2
+            class="fw-bold mb-3 animate__animated animate__fadeInUp"
+            style="font-size: 2.6rem; color: white"
+          >
+            My <span style="color: #7f4ca5">Experience</span>
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 3px;
+              background-color: #7f4ca5;
+              margin: 0 auto;
+            "
+          ></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline position-relative">
+          <!-- Vertical Line -->
+          <div
+            class="timeline-line d-none d-md-block"
+            style="
+              position: absolute;
+              left: 50%;
+              top: 0;
+              bottom: 0;
+              width: 3px;
+              background-color: #7f4ca5;
+              transform: translateX(-50%);
+            "
+          ></div>
+
+          <!-- ========== ENTRY 1 (Left) ========== -->
+          <div class="row mb-5 align-items-center">
+            <div class="col-md-5 text-md-end">
+              <div
+                class="p-4 rounded-4 animate__animated animate__fadeInRight"
+                style="
+                  background-color: rgba(42, 42, 42, 0.95);
+                  border: 1px solid rgba(127, 76, 165, 0.3);
+                "
+              >
+                <h5 class="text-white fw-semibold mb-1">
+                  Software Engineering Practice
+                </h5>
+                <p class="mb-2" style="color: #7f4ca5; font-size: 0.95rem">
+                  2025 – Present
+                </p>
+                <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                  Building websites and applications using HTML, CSS, Bootstrap,
+                  and JavaScript. Focused on clean design and responsive
+                  layouts.
+                </p>
+              </div>
+            </div>
+
+            <!-- Center Dot -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center">
+              <div
+                class="rounded-circle d-flex align-items-center justify-content-center"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background-color: #7f4ca5;
+                  border: 4px solid #202020;
+                  z-index: 2;
+                "
+              >
+                <i class="fas fa-code text-white"></i>
+              </div>
+            </div>
+
+            <div class="col-md-5"></div>
+          </div>
+
+          <!-- ========== ENTRY 2 (Right) ========== -->
+          <div class="row mb-5 align-items-center">
+            <div class="col-md-5"></div>
+
+            <!-- Center Dot -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center">
+              <div
+                class="rounded-circle d-flex align-items-center justify-content-center"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background-color: #7f4ca5;
+                  border: 4px solid #202020;
+                  z-index: 2;
+                "
+              >
+                <i class="fas fa-pen-nib text-white"></i>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div
+                class="p-4 rounded-4 animate__animated animate__fadeInLeft"
+                style="
+                  background-color: rgba(42, 42, 42, 0.95);
+                  border: 1px solid rgba(127, 76, 165, 0.3);
+                "
+              >
+                <h5 class="text-white fw-semibold mb-1">
+                  Ghostwriting & Content
+                </h5>
+                <p class="mb-2" style="color: #7f4ca5; font-size: 0.95rem">
+                  2026 – Present
+                </p>
+                <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                  Writing clear and engaging content for different clients.
+                  Learning how to communicate ideas effectively through words.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========== ENTRY 3 (Left) ========== -->
+          <div class="row mb-5 align-items-center">
+            <div class="col-md-5 text-md-end">
+              <div
+                class="p-4 rounded-4 animate__animated animate__fadeInRight"
+                style="
+                  background-color: rgba(42, 42, 42, 0.95);
+                  border: 1px solid rgba(127, 76, 165, 0.3);
+                "
+              >
+                <h5 class="text-white fw-semibold mb-1">
+                  AI Automation with n8n
+                </h5>
+                <p class="mb-2" style="color: #7f4ca5; font-size: 0.95rem">
+                  2026 – Present
+                </p>
+                <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                  Creating automated workflows using n8n. Connecting different
+                  tools and making processes faster and smarter.
+                </p>
+              </div>
+            </div>
+
+            <!-- Center Dot -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center">
+              <div
+                class="rounded-circle d-flex align-items-center justify-content-center"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background-color: #7f4ca5;
+                  border: 4px solid #202020;
+                  z-index: 2;
+                "
+              >
+                <i class="fas fa-robot text-white"></i>
+              </div>
+            </div>
+
+            <div class="col-md-5"></div>
+          </div>
+
+          <!-- ========== ENTRY 4 (Right) ========== -->
+          <div class="row align-items-center">
+            <div class="col-md-5"></div>
+
+            <!-- Center Dot -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center">
+              <div
+                class="rounded-circle d-flex align-items-center justify-content-center"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background-color: #7f4ca5;
+                  border: 4px solid #202020;
+                  z-index: 2;
+                "
+              >
+                <i class="fas fa-rocket text-white"></i>
+              </div>
+            </div>
+
+            <div class="col-md-5 animate__animated animate__fadeInLeft">
+              <div
+                class="p-4 rounded-4"
+                style="
+                  background-color: rgba(42, 42, 42, 0.95);
+                  border: 1px solid rgba(127, 76, 165, 0.3);
+                "
+              >
+                <h5 class="text-white fw-semibold mb-1">Continuous Learning</h5>
+                <p class="mb-2" style="color: #7f4ca5; font-size: 0.95rem">
+                  Ongoing
+                </p>
+                <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                  Always learning new tools and improving my skills in software
+                  engineering, writing, and automation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== EXPERIENCE SECTION END ===================== -->
+
+    <!-- ===================== CONTACT SECTION START ===================== -->
+    <section
+      id="contact"
+      class="py-5 position-relative d-flex align-items-center"
+      style="
+        font-family: &quot;Poppins&quot;, sans-serif;
+        min-height: 80vh;
+        background-image: url(/images-for-my-portfolio/contact-bg.png); /* ← Replace */
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!-- Dark overlay -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(32, 32, 32, 0.8);
+          z-index: 1;
+        "
+      ></div>
+
+      <div
+        class="container position-relative text-center py-5"
+        style="z-index: 2"
+      >
+        <!-- Heading -->
+        <h2
+          class="fw-bold mb-3 animate__fadeInUp"
+          style="font-size: 2.8rem; color: white"
+        >
+          Let's <span style="color: #7f4ca5">Connect</span>
+        </h2>
+
+        <div
+          style="
+            width: 80px;
+            height: 3px;
+            background-color: #7f4ca5;
+            margin: 0 auto 1.5rem;
+          "
+        ></div>
+
+        <!-- Short Message -->
+        <p
+          class="mb-4 mx-auto animate__fadeInUp"
+          style="
+            color: #eaeaea;
+            font-size: 1.15rem;
+            max-width: 550px;
+            line-height: 1.7;
+          "
+        >
+          I’m always open to new opportunities, collaborations, and interesting
+          conversations. Feel free to reach out — I’d love to hear from you.
+        </p>
+
+        <!-- Button that opens the modal -->
+        <button
+          class="btn btn-lg px-5 py-3 animate__fadeInUp"
+          data-bs-toggle="modal"
+          data-bs-target="#connectModal"
+          style="
+            background-color: #7f4ca5;
+            color: white;
+            border: none;
+            font-weight: 500;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(127, 76, 165, 0.35);
+            transition: all 0.3s ease;
+          "
+        >
+          <i class="fas fa-paper-plane me-2"></i> Get In Touch
+        </button>
+      </div>
+    </section>
+    <!-- ===================== CONTACT SECTION END ===================== -->
+
+    <!-- ===================== CONNECT MODAL ===================== -->
+    <div class="modal fade" id="connectModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div
+          class="modal-content border-0 overflow-hidden"
+          style="
+            background-image: url(/images-for-my-portfolio/contact-modal.png); /* ← Replace */
+            background-size: cover;
+            background-position: center;
+            border-radius: 16px;
+          "
+        >
+          <!-- Dark overlay inside modal -->
+          <div style="background: rgba(32, 32, 32, 0.9); padding: 2.5rem 2rem">
+            <!-- Close button -->
+            <div class="d-flex justify-content-end mb-2">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Modal Title -->
+            <h3 class="text-center text-white fw-bold mb-4">
+              Let's <span style="color: #7f4ca5">Connect</span>
+            </h3>
+
+            <!-- Contact List -->
+            <div class="d-flex flex-column gap-3">
+              <!-- Email -->
+              <a
+                href="mailto:your.email@example.com"
+                class="d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none"
+                style="
+                  background-color: rgba(42, 42, 42, 0.75);
+                  transition: 0.3s;
+                "
+              >
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="width: 48px; height: 48px; background-color: #7f4ca5"
+                >
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 text-white fw-semibold">Email</h6>
+                  <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                    ehiagwinarbtc@gmail.com
+                  </p>
+                </div>
+              </a>
+
+              <!-- Phone / WhatsApp -->
+              <a
+                href="https://wa.me/2348144528691"
+                target="_blank"
+                class="d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none"
+                style="
+                  background-color: rgba(42, 42, 42, 0.75);
+                  transition: 0.3s;
+                "
+              >
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="width: 48px; height: 48px; background-color: #7f4ca5"
+                >
+                  <i class="fab fa-whatsapp text-white"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 text-white fw-semibold">WhatsApp</h6>
+                  <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                    +234 814 452 8691
+                  </p>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="#"
+                target="_blank"
+                class="d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none"
+                style="
+                  background-color: rgba(42, 42, 42, 0.75);
+                  transition: 0.3s;
+                "
+              >
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="width: 48px; height: 48px; background-color: #7f4ca5"
+                >
+                  <i class="fab fa-linkedin-in text-white"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 text-white fw-semibold">LinkedIn</h6>
+                  <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                    linkedin.com/in/yourname
+                  </p>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="#"
+                target="_blank"
+                class="d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none"
+                style="
+                  background-color: rgba(42, 42, 42, 0.75);
+                  transition: 0.3s;
+                "
+              >
+                <div
+                  class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="width: 48px; height: 48px; background-color: #7f4ca5"
+                >
+                  <i class="fab fa-instagram text-white"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 text-white fw-semibold">Instagram</h6>
+                  <p class="mb-0" style="color: #eaeaea; font-size: 0.95rem">
+                    @yourusername
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================== CONNECT MODAL END ===================== -->
+    <!-- ===================== FOOTER START ===================== -->
+    <footer
+      style="
+        background-color: #202020;
+        font-family: &quot;Poppins&quot;, sans-serif;
+        color: #eaeaea;
+        border-top: 2px solid #7f4ca5;
+        padding: 2.5rem 0;
+      "
+    >
+      <div class="container text-center">
+        <!-- Brand -->
+        <a href="#home" class="text-decoration-none">
+          <h4 class="fw-bold mb-3" style="color: #7f4ca5; letter-spacing: 2px">
+            RE
+          </h4>
+        </a>
+
+        <!-- Quick Links -->
+        <div
+          class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 mb-4"
+        >
+          <a
+            href="#home"
+            class="text-decoration-none"
+            style="color: #cfcfcf; transition: 0.3s"
+            >Home</a
+          >
+          <a
+            href="#my-journey"
+            class="text-decoration-none"
+            style="color: #cfcfcf; transition: 0.3s"
+            >My Journey</a
+          >
+          <a
+            href="#skills"
+            class="text-decoration-none"
+            style="color: #cfcfcf; transition: 0.3s"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-decoration-none"
+            style="color: #cfcfcf; transition: 0.3s"
+            >Projects</a
+          >
+          <a
+            href="#experience"
+            class="text-decoration-none"
+            style="color: #cfcfcf; transition: 0.3s"
+            >Experience</a
+          >
+          <a
+            href="#contact"
+            class="text-decoration-none"
+            style="color: #cfcfcf; transition: 0.3s"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Copyright -->
+        <p class="mb-0" style="color: #999; font-size: 0.9rem">
+          © 2026 Ryan Ehiagwina | All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- ===================== FOOTER END ===================== -->
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all elements that should animate
+      const elements = document.querySelectorAll(
+        ".animate__fadeInUp, .animate__fadeInLeft, .animate__fadeInRight, .animate__fadeIn, .animate__fadeInDown",
+      );
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Add the base animation class to trigger it
+              entry.target.classList.add("animate__animated");
+            } else {
+              // Remove it when out of view so it can play again
+              entry.target.classList.remove("animate__animated");
+            }
+          });
+        },
+        {
+          threshold: 0.2,
+        },
+      );
+
+      elements.forEach((el) => {
+        // Make sure it doesn't animate on page load
+        el.classList.remove("animate__animated");
+        observer.observe(el);
+      });
+    });
+  </script>
+</html>
