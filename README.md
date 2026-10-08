@@ -1,20 +1,17 @@
-Hello there, and how are u,
-I'm Ehiagwina Ryan.
+Hello, I'm Ehiagwina Ryan.
 
-I'm a Full-Stack Laravel Developer building clean, functional web applications. Currently wrapping up my intensive software development program and actively looking for an entry-level software engineering role. i want to grow in my current field, while learning from senior tech developers.
+I'm a Full-Stack Laravel Developer building clean, functional web applications. Currently wrapping up my software development program and actively seeking an entry-level software engineering role where I can grow while learning alongside senior engineers.
 
-What I Work With
+What I Work With:
+- Backend: PHP, Laravel, MySQL, PostgreSQL
+- Frontend: JavaScript, Laravel Blade, HTML5, CSS3, Bootstrap
+- Tools & Workflow: Git, GitHub, Docker, Render, VS Code
 
-Backend: PHP, Laravel, MySQL
-Frontend: JavaScript, Blade, HTML5, CSS3, Bootstrap
-Tools & Workflow: Git, GitHub, VS Code, and more.
+What I'm Currently Doing:
+- Building full-stack web applications with authentication, Paystack payment processing, and dynamic database structures.
+- Deploying live web applications using Docker on Render with Neon PostgreSQL to showcase real-world functionality.
+- Sharpening my backend architecture, database optimization, and API integration skills.
 
-WHAT I'M UP TO.
-
-Building full-stack web applications with authentication, Paystack integration, and dynamic database structures.
-Deploying live demo projects to showcase real-world functionality.
-Constantly sharpening my backend architecture and API integration skills.
-
----
-
-Let's Connect: LinkedIn: https://linkedin.com/in/ryan-ehaigwina-87873b41a | Email: ehiagwinarbtc@gmail,com
+Connect With Me:
+- LinkedIn: https://linkedin.com/in/ryan-ehaigwina-87873b41a
+- Email: ehiagwinarbtc@gmail.com
